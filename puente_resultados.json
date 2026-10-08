@@ -1,0 +1,239 @@
+{
+  "ols": {
+    "n": 12,
+    "python": {
+      "intercepto": 38466.875122,
+      "coef_area": 2466.630838,
+      "coef_habitaciones": 12214.188001,
+      "r2": 0.999749988,
+      "rmse": 2043.96,
+      "mae": 1767.76
+    },
+    "excel": {
+      "coef_habitaciones": 12214.188000781713,
+      "coef_area": 2466.630838381864,
+      "intercepto": 38466.875122141864,
+      "r2": 0.999749988003952
+    },
+    "tabla": [
+      {
+        "Area_m2": 50,
+        "Habitaciones": 1,
+        "Precio_USD": 175000,
+        "Predicho": 174012.61,
+        "Error": 987.39
+      },
+      {
+        "Area_m2": 65,
+        "Habitaciones": 2,
+        "Precio_USD": 220000,
+        "Predicho": 223226.26,
+        "Error": -3226.26
+      },
+      {
+        "Area_m2": 70,
+        "Habitaciones": 2,
+        "Precio_USD": 235000,
+        "Predicho": 235559.41,
+        "Error": -559.41
+      },
+      {
+        "Area_m2": 80,
+        "Habitaciones": 3,
+        "Precio_USD": 275000,
+        "Predicho": 272439.91,
+        "Error": 2560.09
+      },
+      {
+        "Area_m2": 95,
+        "Habitaciones": 3,
+        "Precio_USD": 310000,
+        "Predicho": 309439.37,
+        "Error": 560.63
+      },
+      {
+        "Area_m2": 110,
+        "Habitaciones": 3,
+        "Precio_USD": 345000,
+        "Predicho": 346438.83,
+        "Error": -1438.83
+      },
+      {
+        "Area_m2": 120,
+        "Habitaciones": 4,
+        "Precio_USD": 385000,
+        "Predicho": 383319.33,
+        "Error": 1680.67
+      },
+      {
+        "Area_m2": 135,
+        "Habitaciones": 4,
+        "Precio_USD": 420000,
+        "Predicho": 420318.79,
+        "Error": -318.79
+      },
+      {
+        "Area_m2": 150,
+        "Habitaciones": 4,
+        "Precio_USD": 460000,
+        "Predicho": 457318.25,
+        "Error": 2681.75
+      },
+      {
+        "Area_m2": 165,
+        "Habitaciones": 5,
+        "Precio_USD": 505000,
+        "Predicho": 506531.9,
+        "Error": -1531.9
+      },
+      {
+        "Area_m2": 180,
+        "Habitaciones": 5,
+        "Precio_USD": 540000,
+        "Predicho": 543531.37,
+        "Error": -3531.37
+      },
+      {
+        "Area_m2": 200,
+        "Habitaciones": 5,
+        "Precio_USD": 595000,
+        "Predicho": 592863.98,
+        "Error": 2136.02
+      }
+    ],
+    "diferencias_absolutas": {
+      "intercepto": 1.42e-07,
+      "coef_area": 3.82e-07,
+      "coef_habitaciones": 2.18e-07,
+      "r2": 0.0
+    }
+  },
+  "clasificacion": {
+    "n": 100,
+    "umbral_premium": 335343.42,
+    "tasa_premium": 0.5,
+    "metricas": {
+      "Regresión Logística": {
+        "accuracy": 0.95,
+        "balanced_accuracy": 0.95,
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9474,
+        "specificity": 1.0,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "tn": 10,
+        "fp": 0,
+        "fn": 1,
+        "tp": 9,
+        "fpr": 0.0,
+        "fnr": 0.1,
+        "mcc": 0.9045,
+        "kappa": 0.9,
+        "cv_f1": 0.9616
+      },
+      "Árbol de Decisión": {
+        "accuracy": 0.95,
+        "balanced_accuracy": 0.95,
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9474,
+        "specificity": 1.0,
+        "roc_auc": 0.95,
+        "average_precision": 0.95,
+        "tn": 10,
+        "fp": 0,
+        "fn": 1,
+        "tp": 9,
+        "fpr": 0.0,
+        "fnr": 0.1,
+        "mcc": 0.9045,
+        "kappa": 0.9,
+        "cv_f1": 0.9366
+      },
+      "Random Forest": {
+        "accuracy": 0.95,
+        "balanced_accuracy": 0.95,
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9474,
+        "specificity": 1.0,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "tn": 10,
+        "fp": 0,
+        "fn": 1,
+        "tp": 9,
+        "fpr": 0.0,
+        "fnr": 0.1,
+        "mcc": 0.9045,
+        "kappa": 0.9,
+        "cv_f1": 0.9499
+      },
+      "SVM": {
+        "accuracy": 0.9,
+        "balanced_accuracy": 0.9,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889,
+        "specificity": 1.0,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "tn": 10,
+        "fp": 0,
+        "fn": 2,
+        "tp": 8,
+        "fpr": 0.0,
+        "fnr": 0.2,
+        "mcc": 0.8165,
+        "kappa": 0.8,
+        "cv_f1": 0.9331
+      },
+      "KNN": {
+        "accuracy": 0.95,
+        "balanced_accuracy": 0.95,
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9474,
+        "specificity": 1.0,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "tn": 10,
+        "fp": 0,
+        "fn": 1,
+        "tp": 9,
+        "fpr": 0.0,
+        "fnr": 0.1,
+        "mcc": 0.9045,
+        "kappa": 0.9,
+        "cv_f1": 0.9616
+      },
+      "Naive Bayes": {
+        "accuracy": 0.95,
+        "balanced_accuracy": 0.95,
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9474,
+        "specificity": 1.0,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "tn": 10,
+        "fp": 0,
+        "fn": 1,
+        "tp": 9,
+        "fpr": 0.0,
+        "fnr": 0.1,
+        "mcc": 0.9045,
+        "kappa": 0.9,
+        "cv_f1": 0.9749
+      }
+    },
+    "logistica": {
+      "coef_area_est": 3.1915,
+      "coef_hab_est": 0.5208,
+      "odds_area": 24.326,
+      "odds_hab": 1.6834,
+      "reporte": "              precision    recall  f1-score   support\n\n    Estándar      0.909     1.000     0.952        10\n     Premium      1.000     0.900     0.947        10\n\n    accuracy                          0.950        20\n   macro avg      0.955     0.950     0.950        20\nweighted avg      0.955     0.950     0.950        20\n"
+    }
+  }
+}
